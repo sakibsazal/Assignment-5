@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment-5</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,40 +27,84 @@
 
 <body class="w-[1440px] px-[134px] pt-12">
   <header>
-      <div class="navbar font-raleway bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
-            </ul>
+    <!--Navbar start-->
+    <div class="navbar font-raleway bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <a class="text-[#030712] text-[36px] font-normal">P-Ticket</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal font-inter px-1">
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Destination</a></li>
             <li><a>Search</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn bg-[#1DD1001A] text-[#1DD100] border-1 border-[#1DD10066] text-xl font-normal">Bus
-            <img src="images/bus-icon.png" alt="">
-          </a>
+        <a class="text-[#030712] text-[36px] font-normal">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal font-inter px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-[#1DD1001A] text-[#1DD100] border-1 border-[#1DD10066] text-xl font-normal">Bus
+          <img src="images/bus-icon.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!--Navbar end-->
+    <!--cover section start-->
+    <div class="bg-cover text-center mt-4 h-[550px]">
+      <h2 class=" text-white text-6xl pt-[70px] pb-4">End-to-End Travel with </h2>
+      <h2 class="text-[#1DD100] text-6xl pb-6 ">P
+        Paribahan</h2>
+      <p class="text-white  px-[240px] pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+        voluptates.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a class="btn bg-[#1DD100] border-none text-xl font-normal">Buy Tickets
+      </a>
+    </div>
+    <div class="flex justify-between  flex-col lg:flex-row px-[100px] mt-[-70px] gap-6">
+      <div class=" flex items-center justify-center rounded-3xl w-[308px] h-[138px]
+      border-solid border-b-4 border-b-lime-500
+     bg-white gap-4">
+        <img class="w-16 h-16" src="images/people.png" alt="">
+        <div class="text-left font-inter ">
+          <h2 class="text-4xl text-[#030712]">500K+</h2>
+          <h3 class="text-[18px] text-[#03071299]">Registered users</h3>
         </div>
       </div>
+      <div class=" flex items-center justify-center rounded-3xl w-[308px] h-[138px]
+      border-solid border-b-4 border-b-lime-500
+     bg-white gap-4">
+        <img class="w-16 h-16" src="images/ticket-cupon.png" alt="">
+        <div class="text-left font-inter ">
+          <h2 class="text-4xl text-[#030712]">1.7 lacks</h2>
+          <h3 class="text-[18px] text-[#03071299]">Tickets sold</h3>
+        </div>
+      </div>
+      <div class=" flex items-center justify-center rounded-3xl w-[308px] h-[138px]
+      border-solid border-b-4 border-b-lime-500
+     bg-white gap-4">
+        <img class="w-16 h-16" src="images/stoppage.png" alt="">
+        <div class="text-left font-inter ">
+          <h2 class="text-4xl text-[#030712]">80K+</h2>
+          <h3 class="text-[18px] text-[#03071299]">Rental partners</h3>
+        </div>
+      </div>
+    </div>
+     <!--cover section end-->
   </header>
+  <main>
 
+  </main>
 </body>
 
 </html>

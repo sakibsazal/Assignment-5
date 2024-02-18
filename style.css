@@ -1,0 +1,4 @@
+.bg-cover {
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(images/banner.png), lightgray 50% / cover no-repeat;
+}
