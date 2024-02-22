@@ -12,6 +12,33 @@ const price = event.target.parentNode.parentNode.parentNode.parentNode.parentNod
 
 const selectedContainer = document.getElementById("seat-price");
 
+
+
+
+
+const seatCount = getConvertedValue("seat-booked");
+if(seatCount+1>4){
+    alert("Your limit is over");
+    return;
+}
+
+
+event.target.setAttribute("disabled", false);
+event.target.style.backgroundColor ="#1DD100"
+
+
+
+const seatLeft = getConvertedValue("seat-left");
+document.getElementById("seat-left").innerText = seatLeft -1;
+
+const seatBooked = getConvertedValue("seat-booked");
+document.getElementById("seat-booked").innerText = seatBooked +1;
+
+
+
+
+
+
 const div = document.createElement("div");
 div.classList.add("flex");
 div.classList.add("justify-between");
@@ -50,39 +77,20 @@ function updateGrandTotal(status){
     }else {
        const couponCode = document.getElementById("coupon-code").value;
     if(couponCode == "NEW15"){
-        const discounded = totalPrice * 0.3;
+        const discounded = totalPrice * 0.15;
         document.getElementById("grand-total").innerText = totalPrice - discounded;
                }
+              else if(couponCode == "Couple 20"){
+                const discounded = totalPrice * 0.2;
+               document.getElementById("grand-total").innerText = totalPrice - discounded;
+                    }
                else{
                 alert("Please inter a valid coupon code")
                }
-      
-    }
+    
+            }
    
 }
-function updateGrandTotal(status){
-    const totalPrice = getConvertedValue("total-price");  
-    if(status == undefined){
-         
-        document.getElementById("grand-total").innerText = totalPrice;
-    }else {
-       const couponCode = document.getElementById("coupon-code").value;
-    if(couponCode == "Couple 20"){
-        const discounded = totalPrice * 0.2;
-        document.getElementById("grand-total").innerText = totalPrice - discounded;
-               }
-               else{
-                alert("Please inter a valid coupon code")
-               }
-      
-    }
-   
-}
-
-
-
-
-
 
 
 function updateTotalPrice(price){
@@ -102,5 +110,16 @@ function updateTotalPrice(price){
    return convertSeat;
     
    }
-
+//    event.target.setAttribute("disabled", false);
   
+//    function updatePhoneNumber(status){
+//     const phoneNumber = getConvertedValue("phone-number");  
+//     if(status == number){
+         
+//         next.setAttribute("disabled", true);
+//         next.style.backgroundColor ="#1DD100";
+//     }else {
+//         alert("please inter valid number");
+//         next.setAttribute("disabled", false);
+//         next.style.backgroundColor ="#1DD100";
+//        }}

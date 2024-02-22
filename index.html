@@ -394,10 +394,10 @@
         <div class="w-[495px]">
           <h3 class="font-raleway font-semibold text-2xl pl-8 pt-8">Select Your Seat</h3>
           <img class="py-6 pl-8 pr-8  " src="images/Line 2.png" alt="">
-          <div class="bg-[#F7F8F8] w-[433px] h-[335px] rounded-xl ml-8 mb-4">
+          <div class="bg-[#F7F8F8] w-[433px] h-[410px] rounded-xl ml-8 mb-4">
             <div class="flex justify-between px-8 pt-8 font-inter">
               <p class=" text-[16px] font-medium text-black">Seat <span id="seat-booked"
-                  class=" text-white w-[28px]   bg-[#1DD100] px-1 rounded-md "> 2 </span>
+                  class=" text-white w-[28px]   bg-[#1DD100] px-1 rounded-md "> 0 </span>
               </p>
               <p class=" text-[16px] font-medium text-black">Class</p>
               <p class="text-[16px] font-medium text-black">Price</p>
@@ -428,16 +428,16 @@
             <label class="input input-bordered flex items-center mt-4 mx-8 gap-2">
               <input type="text" class="grow text-[#03071266]" placeholder="Enter your name" />
             </label>
-            <p class="pl-8 text-[16px] font-semibold pt-6">Phone Number*</p>
+            <p  class="pl-8 text-[16px] font-semibold pt-6">Phone Number*</p>
             <label class="input input-bordered flex items-center mt-4 mx-8 gap-2">
-              <input type="number" class="grow text-[#03071266]" placeholder="Enter your phone number" />
+              <input id="phone-number" type="number" class="grow text-[#03071266]" placeholder="Enter your phone number" />
             </label>
             <p class="pl-8 text-[16px] font-semibold pt-6">Email ID</p>
             <label class="input input-bordered flex items-center mt-4 mx-8 gap-2">
               <input type="email" class="grow text-[#03071266]" placeholder="Enter your email id" />
             </label>
             <!-- Open the modal using ID.showModal() method -->
-            <button
+            <button id="next"
               class="btn font-raleway bg-[#1DD100] border-none text-xl text-white  rounded-[16px] w-[433px] my-6 mx-8 font-extrabold"
               onclick="my_modal_5.showModal()">Next</button>
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -452,7 +452,7 @@
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- there is a button  modal -->
-                    <button
+                    <button 
                       class="btn w-[300px] mt-[19px] bg-[#27AE60] mb-[55px] rounded-3xl mx-[220px] text-xl  text-white font-semibold">Continue</button>
                   </form>
                 </div>
