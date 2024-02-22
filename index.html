@@ -126,7 +126,7 @@
           </div>
           <img class="pl-[51px] pr-[26px]" src="images/cupon-devider.png" alt="">
           <div class="py-[66px] w-[129px] font-raleway">
-            <h2 class="pb-2 text-[#030712] text-[32px] font-bold">NEW15</h2>
+            <h2  class="pb-2 text-[#030712] text-[32px] font-bold">NEW15</h2>
             <p class="text-[#03071299] font-normal text-xl">Coupon Code</p>
           </div>
         </div>
@@ -140,7 +140,7 @@
           </div>
           <img class="pl-[43px] pr-[20px]" src="images/cupon-devider.png" alt="">
           <div class="py-[66px] w-[148px] font-raleway">
-            <h2 class="pb-2 text-[#030712] text-[30px] font-bold">Couple 20</h2>
+            <h2  class="pb-2 text-[#030712] text-[30px] font-bold">Couple 20</h2>
             <p class="text-[#03071299] font-medium text-xl">Coupon Code</p>
           </div>
         </div>
@@ -413,11 +413,12 @@
               <p>Total Price</p>
               <p>BDT <span id="total-price">0</span></p>
             </div>
-            <label class="input mx-8 h-[56px] mt-4 flex items-center gap-2">
+            <label id="coupon" class="input mx-8 h-[56px] mt-4 flex items-center gap-2">
               <input id="coupon-code" type="text" class="grow pl-4" placeholder="Have any coupon?" />
-              <a onclick="updateGrandTotal('apply-btn')" class="btn bg-[#1DD100] border-none text-[16px] text-white  rounded-xl font-semibold">Apply
+              <a id="apply" onclick="updateGrandTotal('apply-btn')" class="btn bg-[#1DD100] border-none text-[16px] text-white  rounded-xl font-semibold" disabled >Apply
               </a>
             </label>
+            <img class="pt-4  px-8  " src="images/Line 2.png" alt="">
             <div class="flex justify-between text-[#030712] font-medium text-[16px] pt-[16px] px-8">
               <p>Grand Total</p>
               <p>BDT <span id="grand-total">0</span></samp></p>
@@ -439,7 +440,7 @@
             <!-- Open the modal using ID.showModal() method -->
             <button id="next"
               class="btn font-raleway bg-[#1DD100] border-none text-xl text-white  rounded-[16px] w-[433px] my-6 mx-8 font-extrabold"
-              onclick="my_modal_5.showModal()">Next</button>
+              onclick="my_modal_5.showModal()" disabled>Next</button>
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
               <div class=" bg-white font-roboto w-[718px] h-[481px] absolute mx-[361px] rounded-2xl mt-[187px] ">
                 <img class="w-[100px] h-[98px]   mt-[57px] mx-[308px]" src="images/success.png" alt="">

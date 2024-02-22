@@ -110,16 +110,38 @@ function updateTotalPrice(price){
    return convertSeat;
     
    }
-//    event.target.setAttribute("disabled", false);
+
+document.getElementById("coupon-code").addEventListener('keyup', function(event){
+const text = event.target.value;
+const applyBtb = document.getElementById("apply");
+
+if(text === text){
+    applyBtb.removeAttribute("disabled")
+}
+
+
+})
+document.getElementById("apply").addEventListener("click", function(){
+   
+    const applyed = document.getElementById("coupon");
   
-//    function updatePhoneNumber(status){
-//     const phoneNumber = getConvertedValue("phone-number");  
-//     if(status == number){
-         
-//         next.setAttribute("disabled", true);
-//         next.style.backgroundColor ="#1DD100";
-//     }else {
-//         alert("please inter valid number");
-//         next.setAttribute("disabled", false);
-//         next.style.backgroundColor ="#1DD100";
-//        }}
+
+   if(applyed === 'NEW15' || 'Couple 20'){
+    applyed.style.display = 'none';
+   }
+   else{
+    applyed.style.display = 'show';
+   }
+
+})
+
+document.getElementById("phone-number").addEventListener('keyup', function(event){
+    const number = event.target.value;
+    const nextBtb = document.getElementById("next");
+    
+    if(number === number){
+        nextBtb.removeAttribute("disabled")
+    }
+    
+    
+    })
