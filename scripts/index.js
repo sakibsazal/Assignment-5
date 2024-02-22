@@ -129,10 +129,7 @@ document.getElementById("apply").addEventListener("click", function(){
    if(applyed === 'NEW15' || 'Couple 20'){
     applyed.style.display = 'none';
    }
-   else{
-    applyed.style.display = 'show';
-   }
-
+  
 })
 
 document.getElementById("phone-number").addEventListener('keyup', function(event){
