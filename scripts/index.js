@@ -133,11 +133,14 @@ document.getElementById("apply").addEventListener("click", function(){
 })
 
 document.getElementById("phone-number").addEventListener('keyup', function(event){
-    const number = event.target.value;
+    const number = event.target.value.toString().length;
     const nextBtb = document.getElementById("next");
-    
-    if(number === number){
-        nextBtb.removeAttribute("disabled")
+    const seatCount =event.target.value;
+    if( number >0 && seatCount > 0 ){
+        nextBtb.removeAttribute("disabled");
+    }
+    else {
+        nextBtb.setAttribute("disabled", true);
     }
     
     
